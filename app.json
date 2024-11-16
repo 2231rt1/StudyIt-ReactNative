@@ -9,6 +9,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#333"
     },
+
     "ios": {
       "supportsTablet": true
     },
@@ -20,8 +21,7 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [
-      "expo-font"
-    ]
+    "plugins": ["expo-font"],
+    "newArchEnabled": true
   }
 }
