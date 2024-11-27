@@ -5,7 +5,6 @@ import {
   TouchableOpacity,
   ActivityIndicator,
   StyleSheet,
-  TextStyle,
   ViewStyle,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -37,45 +36,46 @@ const LetsStart = () => {
     );
   }
 
-  const dynamicStyles = {
-    title: (fontSize: number, marginTop: number): TextStyle => ({
-      fontSize,
+  const logoDimensions = {
+    width: width * 0.8,
+    height: ((width * 0.8) / 329) * 400,
+  };
+
+  const dynamicStyles = StyleSheet.create({
+    title: {
+      fontSize: width * 0.08,
       fontFamily: 'PlayfairDisplayBlack',
-      marginTop,
       textAlign: 'center',
       color: '#000',
-    }),
-    subtitle: (fontSize: number): TextStyle => ({
-      fontSize,
+    },
+    subtitle: {
+      fontSize: width * 0.035,
       fontFamily: 'PlayfairDisplayRegular',
       textAlign: 'center',
       color: '#666',
-    }),
-    button: (marginTop: number): ViewStyle => ({
-      marginTop,
+    },
+    button: {
+      marginTop: height * 0.04,
       backgroundColor: '#000',
       padding: 10,
-      borderRadius: 10,
+      borderRadius: 15,
       alignItems: 'center',
-    }),
-    buttonText: (fontSize: number): TextStyle => ({
-      fontSize,
+      justifyContent: 'center',
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 2 },
+      shadowOpacity: 0.25,
+      shadowRadius: 3.5,
+      elevation: 5,
+    },
+    buttonText: {
+      fontSize: width * 0.05,
       color: '#FFF',
       fontFamily: 'PlayfairDisplayBold',
-    }),
-  };
+    },
+  });
 
-  const logoWidth = width * 0.8;
-  const logoHeight = (logoWidth / 329) * 400;
-  const fontSize = width * 0.08;
-  const subFontSize = width * 0.035;
-  const buttonWidth = width * 0.5;
-  const buttonHeight = height * 0.05;
-  const buttonFontSize = width * 0.05;
-  const marginTopDynamic = height * 0.04;
-
-  const heightThreshold = 900;
   const availableHeight = height - insets.top - insets.bottom;
+  const showSubtitle = availableHeight > 700;
 
   return (
     <GradientBackground>
@@ -89,17 +89,20 @@ const LetsStart = () => {
           },
         ]}
       >
-        <LetsStartLogo width={logoWidth} height={logoHeight} />
+        <LetsStartLogo
+          width={logoDimensions.width}
+          height={logoDimensions.height}
+        />
         <Text
-          style={dynamicStyles.title(fontSize, marginTopDynamic)}
+          style={[dynamicStyles.title, styles.shadow]}
           accessibilityLabel='Приветственное сообщение'
         >
           Единственное {'\n'} приложение для {'\n'} учебы, которое {'\n'} тебе
           нужно!
         </Text>
-        {availableHeight > heightThreshold && (
+        {showSubtitle && (
           <Text
-            style={dynamicStyles.subtitle(subFontSize)}
+            style={[dynamicStyles.subtitle, styles.shadow]}
             accessibilityLabel='Подзаголовок'
           >
             Следи за оценками! Узнавай домашнее задание! {'\n'} Борись в таблице
@@ -108,8 +111,8 @@ const LetsStart = () => {
         )}
         <TouchableOpacity
           style={[
-            dynamicStyles.button(marginTopDynamic),
-            { width: buttonWidth, height: buttonHeight },
+            dynamicStyles.button,
+            { width: width * 0.45, height: height * 0.05 },
           ]}
           onPress={() =>
             navigation.reset({
@@ -118,7 +121,7 @@ const LetsStart = () => {
             })
           }
         >
-          <Text style={dynamicStyles.buttonText(buttonFontSize)}>Начнем!</Text>
+          <Text style={dynamicStyles.buttonText}>Начнем!</Text>
         </TouchableOpacity>
       </View>
     </GradientBackground>
@@ -135,6 +138,11 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+  } as ViewStyle,
+  shadow: {
+    textShadowColor: 'rgba(0, 0, 0, 0.2)',
+    textShadowOffset: { width: 0, height: 4 },
+    textShadowRadius: 14,
   } as ViewStyle,
 });
 
