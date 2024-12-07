@@ -1,0 +1,78 @@
+{
+  "translation": {
+    "Welcome": {
+      "title": "La seule {'\n'} application d'apprentissage {'\n'} dont vous avez besoin !",
+      "message": "Suivez vos notes ! Consultez vos devoirs ! Luttez dans le classement !",
+      "welcomeButtonText": "Commençons !"
+    },
+    "WelcomeInfo": {
+      "message": "Rejoignez StudyIt ! {'\n'} Rendez l'apprentissage inoubliable !",
+      "registrationButtonText": "Créer un compte",
+      "loginButtonText": "Connexion"
+    },
+    "Registration": {
+      "title": "Inscription",
+      "email": {
+        "label": "Adresse électronique",
+        "errorMessage": {
+          "required": "L'adresse électronique est obligatoire.",
+          "invalidFormat": "Adresse électronique invalide."
+        }
+      },
+      "password": {
+        "label": "Mot de passe",
+        "placeholder": "Le mot de passe doit comporter au moins 8 caractères",
+        "errorMessage": {
+          "required": "Le mot de passe est obligatoire.",
+          "minLength": "Le mot de passe doit contenir au moins 8 caractères."
+        }
+      },
+      "confirmPassword": {
+        "label": "Confirmation du mot de passe",
+        "placeholder": "Répétez votre mot de passe",
+        "errorMessage": {
+          "required": "La confirmation du mot de passe est obligatoire.",
+          "invalidFormat": "Les mots de passe ne correspondent pas."
+        }
+      },
+      "registrationButtonText": "S'inscrire",
+      "alreadyHaveAccount": "Vous avez déjà un compte ? Connectez-vous !",
+      "orRegisterWithText": "Ou inscrivez-vous avec"
+    },
+    "Verification": {
+      "title": "Entrez le code",
+      "message": "Nous avons envoyé un code à votre adresse électronique : {{email}}",
+      "sendMessageAgain": "Renvoyer le code"
+    },
+    "Login": {
+      "title": "Bienvenue !👋",
+      "email": {
+        "label": "Adresse électronique"
+      },
+      "password": {
+        "label": "Mot de passe",
+        "message": "Mot de passe oublié ?"
+      },
+      "errorMessage": {
+        "required": "Adresse électronique ou mot de passe incorrect."
+      },
+      "loginButtonText": "Connexion",
+      "orRegisterWithText": "Ou inscrivez-vous avec",
+      "noAccountText": "Pas de compte ? Inscrivez-vous !"
+    },
+    "ELSchool": {
+      "title": "ELSchool",
+      "message": "Entrez vos informations du carnet électronique",
+      "login": {
+        "label": "Identifiant",
+        "placeholder": "DupontJK20240326"
+      },
+      "password": {
+        "label": "Mot de passe",
+        "placeholder": "Entrez votre mot de passe"
+      },
+      "laterButtonText": "Faire cela plus tard",
+      "loginButtonText": "Connexion"
+    }
+  }
+}

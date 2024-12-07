@@ -1,0 +1,78 @@
+{
+  "translation": {
+    "Welcome": {
+      "title": "The only {'\n'} learning app {'\n'} you need!",
+      "message": "Keep track of your grades! Check your homework! Compete on the leaderboard!",
+      "welcomeButtonText": "Let's get started!"
+    },
+    "WelcomeInfo": {
+      "message": "Join StudyIt! {'\n'} Make learning unforgettable!",
+      "registrationButtonText": "Create an account",
+      "loginButtonText": "Login"
+    },
+    "Registration": {
+      "title": "Registration",
+      "email": {
+        "label": "Email",
+        "errorMessage": {
+          "required": "Email is required.",
+          "invalidFormat": "Invalid email."
+        }
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "Password must be at least 8 characters",
+        "errorMessage": {
+          "required": "Password is required.",
+          "minLength": "Password must be at least 8 characters long."
+        }
+      },
+      "confirmPassword": {
+        "label": "Confirm Password",
+        "placeholder": "Repeat your password",
+        "errorMessage": {
+          "required": "Confirming password is required.",
+          "invalidFormat": "Passwords do not match."
+        }
+      },
+      "registrationButtonText": "Register",
+      "alreadyHaveAccount": "Already have an account? Log in!",
+      "orRegisterWithText": "Or register with"
+    },
+    "Verification": {
+      "title": "Enter the code",
+      "message": "We have sent a code to your email: {{email}}",
+      "sendMessageAgain": "Resend the code"
+    },
+    "Login": {
+      "title": "Welcome!👋",
+      "email": {
+        "label": "Email"
+      },
+      "password": {
+        "label": "Password",
+        "message": "Forgot your password?"
+      },
+      "errorMessage": {
+        "required": "Invalid email or password."
+      },
+      "loginButtonText": "Login",
+      "orRegisterWithText": "Or register with",
+      "noAccountText": "No account? Sign up!"
+    },
+    "ELSchool": {
+      "title": "ELSchool",
+      "message": "Enter your electronic diary information",
+      "login": {
+        "label": "Login",
+        "placeholder": "SmithJK20240326"
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "Enter your password"
+      },
+      "laterButtonText": "Do this later",
+      "loginButtonText": "Login"
+    }
+  }
+}

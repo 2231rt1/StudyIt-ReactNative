@@ -1,0 +1,78 @@
+{
+  "translation": {
+    "Welcome": {
+      "title": "あなたが必要とする唯一の {'\n'} 学習アプリ！",
+      "message": "成績を追跡しよう！宿題を確認しよう！リーダーボードで競争しよう！",
+      "welcomeButtonText": "始めましょう！"
+    },
+    "WelcomeInfo": {
+      "message": "StudyItに参加しよう！ {'\n'} 学習を忘れられないものにしよう！",
+      "registrationButtonText": "アカウントを作成",
+      "loginButtonText": "ログイン"
+    },
+    "Registration": {
+      "title": "登録",
+      "email": {
+        "label": "電子メール",
+        "errorMessage": {
+          "required": "電子メールは必須です。",
+          "invalidFormat": "無効な電子メールです。"
+        }
+      },
+      "password": {
+        "label": "パスワード",
+        "placeholder": "パスワードは8文字以上",
+        "errorMessage": {
+          "required": "パスワードは必須です。",
+          "minLength": "パスワードは8文字以上でなければなりません。"
+        }
+      },
+      "confirmPassword": {
+        "label": "パスワードの確認",
+        "placeholder": "パスワードを再入力してください",
+        "errorMessage": {
+          "required": "パスワードの確認は必須です。",
+          "invalidFormat": "パスワードが一致しません。"
+        }
+      },
+      "registrationButtonText": "登録する",
+      "alreadyHaveAccount": "すでにアカウントをお持ちですか？ログイン！",
+      "orRegisterWithText": "または、で登録"
+    },
+    "Verification": {
+      "title": "コードを入力してください",
+      "message": "あなたの電子メールにコードを送信しました: {{email}}",
+      "sendMessageAgain": "コードを再送信"
+    },
+    "Login": {
+      "title": "ようこそ！👋",
+      "email": {
+        "label": "電子メール"
+      },
+      "password": {
+        "label": "パスワード",
+        "message": "パスワードを忘れましたか？"
+      },
+      "errorMessage": {
+        "required": "無効な電子メールまたはパスワードです。"
+      },
+      "loginButtonText": "ログイン",
+      "orRegisterWithText": "または、で登録",
+      "noAccountText": "アカウントをお持ちでないですか？登録！"
+    },
+    "ELSchool": {
+      "title": "ELSchool",
+      "message": "電子日記の情報を入力してください",
+      "login": {
+        "label": "ログイン",
+        "placeholder": "佐藤T20240326"
+      },
+      "password": {
+        "label": "パスワード",
+        "placeholder": "パスワードを入力してください"
+      },
+      "laterButtonText": "後で行う",
+      "loginButtonText": "ログイン"
+    }
+  }
+}

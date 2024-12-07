@@ -1,7 +1,18 @@
+// prettier-ignore
 {
-  "extends": "expo/tsconfig.base",
+  "extends": "@react-native/typescript-config/tsconfig.json",   
   "compilerOptions": {
-    "strict": true,
-    "typeRoots": ["./node_modules/@types", "./src/@types"]
-  }
+    "jsx": "react-jsx",
+
+    "skipLibCheck": true,                                 
+
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"],
+      "@screens/*": ["src/screens/*"]
+    },
+  },
+  "include": [
+    "./**/*",
+  ]
 }
