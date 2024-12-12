@@ -9,7 +9,13 @@
     "baseUrl": ".",
     "paths": {
       "*": ["./src/*"],
-      "@screens/*": ["src/screens/*"]
+      "@app/*": ["/src/app/*"],
+      "@processes/*": ["/src/processes/*"],
+      "@screens/*": ["/src/screens/*"],
+      "@widgets/*": ["/src/widgets/*"],
+      "@features/*": ["/src/features/*"],
+      "@entities/*": ["/src/entities/*"],
+      "@shared/*": ["/src/shared/*"],
     },
     "module": "esnext",
   },

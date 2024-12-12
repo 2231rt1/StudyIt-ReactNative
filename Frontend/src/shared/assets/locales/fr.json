@@ -2,7 +2,7 @@
   "translation": {
     "Welcome": {
       "title": "La seule {'\n'} application d'apprentissage \n dont vous avez besoin !",
-      "message": "Suivez vos notes ! Consultez vos devoirs ! Luttez dans le classement !",
+      "message": "Suivez vos notes ! Consultez vos devoirs ! \n Luttez dans le classement !",
       "welcomeButtonText": "Commençons !"
     },
     "WelcomeInfo": {

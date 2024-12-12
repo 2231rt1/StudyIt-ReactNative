@@ -1,4 +1,4 @@
-import { Button, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { wp, hp } from 'shared/config/dimensions';
 import { shadowStyle } from 'shared/ui/Styles/shadows/shadowStyles';
 
@@ -42,8 +42,5 @@ export const styles = StyleSheet.create({
     fontFamily: 'PlayfairDisplayBold',
     color: '#555',
     ...shadowStyle,
-  },
-  button: {
-    fontFamily: 'InterSemiBold',
   },
 });
