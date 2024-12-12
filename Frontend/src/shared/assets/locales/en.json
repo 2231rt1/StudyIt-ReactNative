@@ -1,12 +1,12 @@
 {
   "translation": {
     "Welcome": {
-      "title": "The only {'\n'} learning app {'\n'} you need!",
+      "title": "The only \n learning app \n you need!",
       "message": "Keep track of your grades! Check your homework! Compete on the leaderboard!",
       "welcomeButtonText": "Let's get started!"
     },
     "WelcomeInfo": {
-      "message": "Join StudyIt! {'\n'} Make learning unforgettable!",
+      "message": "Join StudyIt! \n Makse learning unforgettable!",
       "registrationButtonText": "Create an account",
       "loginButtonText": "Login"
     },

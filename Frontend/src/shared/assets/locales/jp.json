@@ -1,12 +1,12 @@
 {
   "translation": {
     "Welcome": {
-      "title": "あなたが必要とする唯一の {'\n'} 学習アプリ！",
+      "title": "あなたが必要とする唯一の \n 学習アプリ！",
       "message": "成績を追跡しよう！宿題を確認しよう！リーダーボードで競争しよう！",
       "welcomeButtonText": "始めましょう！"
     },
     "WelcomeInfo": {
-      "message": "StudyItに参加しよう！ {'\n'} 学習を忘れられないものにしよう！",
+      "message": "StudyItに参加しよう！ \n 学習を忘れられないものにしよう！",
       "registrationButtonText": "アカウントを作成",
       "loginButtonText": "ログイン"
     },

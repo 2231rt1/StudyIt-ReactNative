@@ -7,8 +7,8 @@ import {
 } from 'shared/config/navigation/index';
 import LetsStartLogo from 'shared/assets/ui/LetsStartLogo';
 import { styles } from './WelcomeScreenStyle';
-import useCustomFonts from 'shared/lib/hooks/text/useCustomFonts';
-import { CustomButton } from 'shared/ui/buttons/button';
+import GlowButton from 'shared/ui/Buttons/NeonLightButton/NeonLightButton';
+import { useTranslation } from 'react-i18next';
 
 type WelcomeScreenProps = NativeStackScreenProps<
   RootStackParamList,
@@ -19,7 +19,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
   navigation,
   route,
 }) => {
-  useCustomFonts();
+  const { t } = useTranslation();
   return (
     <View style={styles.container}>
       <View style={styles.logoContainer}>
@@ -31,21 +31,16 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
           style={styles.title}
           accessibilityLabel='Приветственное сообщение'
         >
-          Единственное {'\n'} приложение для {'\n'} учебы, которое {'\n'} тебе
-          нужно!
+          {t('Welcome.title')}
         </Text>
-
         <Text style={styles.message} accessibilityLabel='Подзаголовок'>
-          Следи за оценками! Узнавай домашнее задание! {'\n'} Борись в таблице
-          лидеров!
+          {t('Welcome.message')}
         </Text>
       </View>
 
-      <CustomButton
-        title='Начнем!'
+      <GlowButton
+        title={t('Welcome.buttonText')}
         onPress={() => navigation.navigate(AppNavigation.WELCOMEINFO)}
-        buttonStyle={styles.button}
-        textStyle={styles.buttonText}
       />
     </View>
   );

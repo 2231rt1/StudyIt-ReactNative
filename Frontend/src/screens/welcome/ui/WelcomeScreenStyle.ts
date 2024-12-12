@@ -1,6 +1,6 @@
-import { StyleSheet } from 'react-native';
+import { Button, StyleSheet } from 'react-native';
 import { wp, hp } from 'shared/config/dimensions';
-import { shadowStyle } from 'shared/ui/styles/shadows/shadowStyles';
+import { shadowStyle } from 'shared/ui/Styles/shadows/shadowStyles';
 
 export const styles = StyleSheet.create({
   container: {
@@ -44,20 +44,6 @@ export const styles = StyleSheet.create({
     ...shadowStyle,
   },
   button: {
-    backgroundColor: '#000',
-    borderRadius: 25,
-    justifyContent: 'center',
-    alignItems: 'center',
-    elevation: 5,
-    marginTop: hp(1),
-    paddingVertical: hp(2),
-    width: '80%',
-    alignSelf: 'center',
-    ...shadowStyle,
-  },
-  buttonText: {
-    color: '#ffffff',
-    fontSize: hp(1.8),
     fontFamily: 'InterSemiBold',
   },
 });

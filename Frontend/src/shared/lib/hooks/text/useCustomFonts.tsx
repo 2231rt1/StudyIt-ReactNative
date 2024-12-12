@@ -1,6 +1,8 @@
+import React from 'react';
+import { View, ActivityIndicator } from 'react-native';
 import { useFonts } from 'expo-font';
 
-const useCustomFonts = () => {
+const FontLoader: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [fontsLoaded] = useFonts({
     FigmaHand: require('shared/assets/fonts/FigmaHand-Bold.ttf'),
     Roboto: require('shared/assets/fonts/Roboto.ttf'),
@@ -11,7 +13,15 @@ const useCustomFonts = () => {
     InterSemiBold: require('shared/assets/fonts/inter-semi-bold.otf'),
   });
 
-  return fontsLoaded;
+  if (!fontsLoaded) {
+    return (
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <ActivityIndicator size='large' color='#0000ff' />
+      </View>
+    );
+  }
+
+  return <>{children}</>;
 };
 
-export default useCustomFonts;
+export default FontLoader;

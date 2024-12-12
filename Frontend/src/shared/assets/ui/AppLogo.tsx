@@ -4,15 +4,11 @@ import Svg, { G, Path, Defs, LinearGradient, Stop } from 'react-native-svg';
 interface AppLogoProps {
   width: number;
   height: number;
-  resizeMode?: 'contain' | 'cover' | 'stretch'; // добавьте это
+  resizeMode?: 'contain' | 'cover' | 'stretch';
 }
 
 const AppLogo: React.FC<AppLogoProps> = props => (
-  <Svg
-    viewBox='0 0 314 258'
-    fill='none'
-    {...props} // Spread operator to include width and height
-  >
+  <Svg viewBox='0 0 314 258' fill='none' {...props}>
     <G filter='url(#a)' opacity={0.85}>
       <Path
         fill='url(#b)'

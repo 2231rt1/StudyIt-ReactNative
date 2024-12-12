@@ -1,7 +1,8 @@
-import { getLocales } from 'react-native-localize';
+import * as Localization from 'expo-localization';
 
 export const getLocalize = <T extends string = 'en'>(): T => {
-  const locales = getLocales();
+  const locales = Localization.getLocales();
+  console.log('Available locales:', locales);
   const languageCode = locales[0]?.languageCode || 'en';
   return languageCode as T;
 };
